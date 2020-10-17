@@ -1,0 +1,86 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.primary-btn-1 {
+    background-color: #E55021;
+}
+
+.primary-btn-2 {
+    background-color: #05B916;
+}
+
+.secondary-btn-1 {
+    border-color: #E55021;
+    color: #E55021;
+}
+
+.secondary-btn-2 {
+    border-color: #05B916;
+    color: #05B916;
+}
+
+.form-wrapper {
+    margin-top: 10vh;
+    width: 50%;
+}
+
+.form-title {
+    font-weight: 500;
+    text-align: center;
+}
+
+.forgot {
+    color: #E55021;
+}
+
+.auth-icon {
+    align-self: flex-start;
+}
+
+.form-img {
+    height: 100vh;
+}
+
+.page-wrapper-home {
+    height: 100vh;
+    background: url('./assets/h-bg.jpg') center no-repeat !important;
+    background-size: cover;
+}
+
+.hero-note {
+    padding-top: 20vh;
+    max-width: 40rem;
+    font-size: 2.5rem;
+}
+
+.ft-img {
+    width: 2rem;
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .form-img-wrapper {
+        display: none;
+    }
+  }
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .form-wrapper {
+        width: 80%;
+    }
+    .form-img-wrapper {
+        display: none;
+    }
+  }
