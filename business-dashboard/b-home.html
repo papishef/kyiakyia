@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bricklayer/0.4.2/bricklayer.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* The side navigation menu */
+
+    </style>
+</head>
+<body>
+  <div style="background: url('../assets/nav-bg.png') center">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand mx-auto py-3" href="#">
+          <img src="../assets/logo-2.png" alt="">
+      </a>
+
+      <span onclick="openNav()" class="showbtn text-light h4"><ion-icon name="menu-outline"></ion-icon></span>
+    </nav>
+  </div>
+  
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn text-dark" onclick="closeNav()"><ion-icon name="close-outline"></ion-icon></a>
+      <ul class="nav flex-column">
+        <li class="nav-item my-4 pb-4">
+          <span class="nav-link">
+            <div class="card mb-3 rounded bg-dark" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../assets/profile-pic.png" class="card-img rounded" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text text-light">Marrienta Ujunwa</p>
+                    <p class="card-text"><small class="text-success">Catering</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </li>
+        <li class="nav-item pt-2">
+          <a class="nav-link text-success" href="#"><ion-icon name="analytics-outline"></ion-icon> Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#"><ion-icon name="person-outline"></ion-icon> Clients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#"><ion-icon name="chatbox-ellipses-outline"></ion-icon> Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#"><ion-icon name="settings-outline"></ion-icon> Account Settings</a>
+        </li>
+      </ul>
+      <div class="pt-4 mt-4">
+        <span class="ml-4"><button type="button" class="btn btn-link text-danger"><ion-icon name="log-out-outline"></ion-icon> Logout</button></span>
+      </div>
+    </div>
+    
+    <!-- Use any element to open the sidenav -->
+    
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+      <div class="row">
+        <div class="col-sm-12 col-md-3">
+          <div style="background: #05B91620" class="card text-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header text-center h4">8</div>
+            <div class="card-body text-center">
+              <small class="card-title text-center">Orders Today</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div style="background: #05B91620" class="card text-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header text-center h4">18</div>
+            <div class="card-body text-center">
+              <small class="card-title text-center">Total Orders</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div style="background: #05B91620" class="card text-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header text-center h4">16</div>
+            <div class="card-body text-center">
+              <small class="card-title text-center">Orders Completed</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div style="background: #05B91620" class="card text-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header text-center h4">Gbagada</div>
+            <div class="card-body text-center">
+              <small class="card-title text-center">Top Area</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-4">
+        <table class="table rounded">
+          <thead>
+            <tr>
+              <th scope="col">Recent</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Okocha James reviewed your work</th>
+              <td>12:30, 9-10-2020</td>
+            </tr>
+            <tr>
+              <th scope="row">You accepted a job from Osaro Jane</th>
+              <td>12:30, 9-10-2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="./side-nav.js"></script>
+</body>
+</html>
