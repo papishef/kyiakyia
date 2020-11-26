@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bricklayer/0.4.2/bricklayer.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* The side navigation menu */
+
+    </style>
+</head>
+<body>
+  <div  class="bg-dark">
+    <div style="background-color: #05B916;" id="mySidenav" style="z-index: 5;" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn text-dark" onclick="closeNav()"><ion-icon name="close-outline"></ion-icon></a>
+      <ul class="nav flex-column">
+        <li class="nav-item pt-2">
+          <a class="nav-link text-dark" href="#"><img style="max-width: 8rem;" src="../assets/logo-1.png" alt=""></a>
+        </li>
+        <li class="nav-item pt-2">
+          <a class="nav-link text-dark" href="#"><span class="h3">Admin</span></a>
+        </li>
+        <li class="nav-item pt-2">
+          <a class="nav-link text-light" href="#">Analytics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Orders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Vendors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Customers</a>
+        </li>
+        <li class="nav-item">
+          <a style="background-color: tomato;" class="nav-link text-dark" href="#">Role Manager</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link text-light" href="#">Accounting</a>
+        </li>
+      </ul>
+      <div class="pt-4 mt-4">
+        <span class="ml-4"><button type="button" class="btn btn-link text-dark"><ion-icon name="log-out-outline"></ion-icon> Logout</button></span>
+      </div>
+    </div>
+    
+    <!-- Use any element to open the sidenav -->
+    
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div style="min-height: 100vh;" id="main">
+      <div class="container">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-light my-4" data-toggle="modal" data-target="#exampleModal">
+          Add role <ion-icon name="add-outline"></ion-icon>
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content p-4">
+              <form action="">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Full name</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Role type</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Admin</option>
+                    <option>Human resource</option>
+                    <option>Customer Agent</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <table class="table table-hover bg-light border-rounded">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Role</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Ajayi Peters</td>
+              <td>Admin</td>
+            </tr>
+            
+            <tr>
+              <th scope="row">2</th>
+              <td>Mary lou</td>
+              <td>Human resource</td>
+              <td>
+                <button class="btn btn-link text-danger">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+      
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="./side-nav.js"></script>
+</body>
+</html>

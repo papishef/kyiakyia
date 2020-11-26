@@ -13,7 +13,7 @@ body {
 
 .secondary-btn-1 {
     border-color: #E55021;
-    color: #E55021;
+    color: #E55021 !important;
 }
 
 .secondary-btn-2 {
@@ -59,6 +59,61 @@ body {
     width: 2rem;
 }
 
+
+/* SIDE MENU STYLING */
+.sidenav {
+    height: 100% !important; /* 100% Full-height */
+    width: 250px; /* 0 width - change this with JavaScript */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    /* top: 0; Stay at the top */
+    left: 0;
+    background-color: #F2FCF1; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .closebtn, .showbtn {
+      display: none !important;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+    margin-left: 250px; /* 0 width - change this with JavaScript */
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+        min-height: 100% !important; /* 100% Full-height */
+    }
+    .sidenav a {font-size: 18px;}
+  }
+
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
@@ -68,6 +123,21 @@ body {
     .form-img-wrapper {
         display: none;
     }
+
+    .closebtn, .showbtn {
+        display: block !important;
+    }
+
+    .sidenav {
+        min-height: 150% !important; /* 100% Full-height */
+        width: 0%;
+    }
+    
+    #main {
+        transition: margin-left .5s;
+        padding: 20px;
+        margin-left: 0%; /* 0 width - change this with JavaScript */
+      }
   }
 
 
@@ -83,4 +153,16 @@ body {
     .form-img-wrapper {
         display: none;
     }
+    .closebtn, .showbtn {
+        display: block !important;
+    }
+    .sidenav {
+        min-height: 150% !important; /* 100% Full-height */
+        width: 0%;
+    }
+    #main {
+        transition: margin-left .5s;
+        padding: 20px;
+        margin-left: 0%; /* 0 width - change this with JavaScript */
+      }
   }
