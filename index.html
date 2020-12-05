@@ -10,8 +10,12 @@
 </head>
 <body>
 <div class="page-wrapper-home">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <nav class="navbar navbar-expand-lg py-4 navbar-dark bg-transparent">
       <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <a class="navbar-brand logo-mob" href="./index.html">
+        <img src="./assets/logo-2.png" alt="">
+      </a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -22,17 +26,17 @@
             <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Categories<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="./categories.html">Categories<span class="sr-only">(current)</span></a>
           </li>
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="">About us<span class="sr-only">(current)</span></a>
+          </li> -->
           <li class="nav-item active">
-            <a class="nav-link" href="#">About us<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Contact us<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="./contact-us.html">Contact us<span class="sr-only">(current)</span></a>
           </li>
         </ul>
 
-        <a class="navbar-brand mx-auto logo-mob" href="./index.html">
+        <a class="navbar-brand mx-auto hide-mob" href="./index.html">
             <img src="./assets/logo-2.png" alt="">
         </a>
         <form class="form-inline my-2 my-lg-0">
@@ -73,9 +77,9 @@
 
 <div class="container py-4">
   <p class="h3 font-weight-bold my-4 py-4 text-center">How it Works</p>
-  <div class="row pb-4">
-    <div class="col">
-      <div class="card p-4" style="width: 18rem;">
+  <div class="row justify-content-centerpb-4">
+    <div class="col-md-12 col-lg-4 py-4">
+      <div class="card p-4" style="width: 100%;">
         <h5 class="card-title text-center">Search for Service</h5>
         <img src="./assets/h1.png" class="card-img-top" alt="...">
         <div class="card-body">
@@ -83,8 +87,8 @@
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card p-4" style="width: 18rem;">
+    <div class="col-md-12 col-lg-4 py-4">
+      <div class="card p-4" style="width: 100%;">
         <h5 class="card-title text-center">Hire a Professional</h5>
         <img src="./assets/h2.png" class="card-img-top" alt="...">
         <div class="card-body">
@@ -92,8 +96,8 @@
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card p-4" style="width: 18rem;">
+    <div class="col-md-12 col-lg-4 py-4">
+      <div class="card p-4" style="width: 100%;">
         <h5 class="card-title text-center">Make Payment</h5>
         <img src="./assets/h3.png" class="card-img-top" alt="...">
         <div class="card-body">
@@ -105,28 +109,28 @@
 </div>
 
 <div style="background-color: #88D382;" class="container-fluid py-4">
-  <p class="h3 font-weight-bold my-4 py-4 text-center">How it Works</p>
-  <div class="row">
+  <p class="h3 font-weight-bold my-4 py-4 text-center">Categories</p>
+  <div class="row justify-content-center">
     <div class="col-md-3">
-      <div class="card bg-transparent border-0 p-4" style="width: 18rem;">
+      <div class="card bg-transparent border-0 p-2" style="width: 100%;">
         <img src="./assets/Technicians.png" class="card-img-top rounded-lg" alt="...">
         <h5 class="card-title text-center pt-3">Technicians</h5>
       </div>
     </div>
     <div class="col-md-3">
-      <div class="card bg-transparent border-0 p-4" style="width: 18rem;">
+      <div class="card bg-transparent border-0 p-2" style="width: 100%;">
         <img src="./assets/computer-it.png" class="card-img-top rounded-lg" alt="...">
         <h5 class="card-title text-center pt-3">Computer/IT</h5>
       </div>
     </div>
     <div class="col-md-3">
-      <div class="card bg-transparent border-0 p-4" style="width: 18rem;">
+      <div class="card bg-transparent border-0 p-2" style="width: 100%;">
         <img src="./assets/cleaning.png" class="card-img-top rounded-lg" alt="...">
         <h5 class="card-title text-center pt-3">Domestics</h5>
       </div>
     </div>
     <div class="col-md-3">
-      <div class="card bg-transparent border-0 p-4" style="width: 18rem;">
+      <div class="card bg-transparent border-0 p-2" style="width: 100%;">
         <img src="./assets/art.png" class="card-img-top rounded-lg" alt="...">
         <h5 class="card-title text-center pt-3">Art</h5>
       </div>
@@ -135,9 +139,9 @@
   <p class="text-right">See more</p>
 </div>
 
-<div class="container my-4 py-4">
+<div class="container-fluid my-4 py-4">
   <div class="row">
-    <div class="col-4">
+    <div class="col-md-4">
       <div class="card bg-transparent border-0">
         <div class="card-body">
           <img class="ft-img card-img-top py-2" src="./assets/icons/Group 52.png" alt="">
@@ -146,7 +150,7 @@
         </div>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-md-4">
       <div class="card bg-transparent border-0">
         <div class="card-body">
           <img class="ft-img card-img-top py-2" src="./assets/icons/Group 51.png" alt="">
@@ -155,7 +159,7 @@
         </div>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-md-4">
       <div class="card bg-transparent border-0">
         <div class="card-body">
           <img class="ft-img card-img-top py-2" src="./assets/icons/Group 55.png" alt="">
@@ -164,7 +168,7 @@
         </div>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-md-4">
       <div class="card bg-transparent border-0">
         <div class="card-body">
           <img class="ft-img card-img-top py-2" src="./assets/icons/Group 54.png" alt="">
@@ -173,7 +177,7 @@
         </div>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-md-4">
       <div class="card bg-transparent border-0">
         <div class="card-body">
           <img class="ft-img card-img-top py-2" src="./assets/icons/Group 53.png" alt="">
@@ -185,24 +189,21 @@
   </div>
 </div>
 
-<footer class="bg-dark mt-4 py-4">
-  <ul class="nav justify-content-center py-4 text-light">
-    <li class="nav-item">
+<footer style="max-width: 100vw;" class="bg-dark mt-4 py-4">
+  <ul style="max-width: 100%;" class="nav justify-content-center row py-4">
+    <li class="col-md-3">
       <a class="nav-link text-light" href="#">
         <img src="./assets/logo-2.png" alt=""><br>
         <small>Copyright@2020 KyiaKyia Digitals</small>
       </a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link text-light" href="#">Address</a>
-    </li>
-    <li class="nav-item">
+    <li class="col-md-3 text-center">
       <a class="nav-link text-light" href="#">About us</a>
     </li>
-    <li class="nav-item">
+    <li class="col-md-3 text-center">
       <a class="nav-link text-light" href="#">Contact us</a>
     </li>
-    <li class="nav-item">
+    <li class="col-md-3 text-center">
       <a class="nav-link text-light" href="#">Terms and conditions</a>
     </li>
   </ul>
