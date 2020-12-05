@@ -37,6 +37,7 @@ body {
 
 .auth-icon {
     align-self: flex-start;
+    width: 7%;
 }
 
 .form-img {

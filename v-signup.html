@@ -11,38 +11,51 @@
 </head>
 <body>
 <div class="page-wrapper">
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Categories<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About us<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Contact us<span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
-  
-          <a class="navbar-brand mx-auto logo-mob" href="./index.html">
-              <img src="./assets/logo-1.png" alt="">
+  <nav class="navbar navbar-expand-lg py-4 navbar-light bg-transparent">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <a class="navbar-brand logo-mob" href="./index.html">
+      <img src="./assets/logo-1.png" alt="">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./categories.html">Categories<span class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="">About us<span class="sr-only">(current)</span></a>
+        </li> -->
+        <li class="nav-item active">
+          <a class="nav-link" href="./contact-us.html">Contact us<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+
+      <a class="navbar-brand mx-auto hide-mob" href="./index.html">
+          <img src="./assets/logo-1.png" alt="">
+      </a>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control bg-light text-right border-0 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <a class="text-light px-3" href="./login.html">Log in</a>
+        <div class="dropdown">
+          <a class="btn btn-secondary primary-btn-1 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Get started
           </a>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control bg-light text-right border-0 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn primary-btn-1 text-light mx-2 my-2 my-sm-0" >Log in</button>
-            <button class="btn secondary-btn-1 my-2 my-sm-0" >Sign up</button>
-          </form>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="./c-signup.html">Hire a service</a>
+            <a class="dropdown-item" href="./v-signup.html">Sell a service</a>
+          </div>
         </div>
-      </nav>  
+      </form>
+    </div>
+  </nav>
 
       <div class="container py-4 mb-3">
         <div class="mx-auto card form-wrapper">
@@ -91,7 +104,7 @@
               <div class="text-center">
                   <button class="btn btn-light border-secondary auth">
                       <img class="auth-icon" src="./assets/google.svg" alt="">
-                      <span class="px-4">Sign up with Google</span>
+                      <span class="px-2">Sign up with Google</span>
                   </button>
               </div>
 
